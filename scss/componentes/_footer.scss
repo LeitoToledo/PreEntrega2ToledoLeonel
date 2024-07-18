@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    height: 30vh;
+    height: auto;
     align-items: center;
     background-color:#1f691b;
     background-size:auto;
@@ -50,11 +50,11 @@ footer ul li a .button-footer {
 
 
 .contenedor-menu-hamburguesa {
-    display: none; /* Ocultamos el contenedor por defecto */
+    display: none;
 }
 
 .icon {
-    display: none; /* Ocultamos el ícono por defecto */
+    display: none; 
 }
 
 
@@ -136,24 +136,18 @@ footer ul li a .button-footer {
 }
 
 
-/* este es el menu hamburguesa */
 
 
 .contenedor-menu-hamburguesa {
     display: block;
-    /* Mostramos el contenedor del menú hamburguesa */
     margin-top: 10px;
-    /* Ajusta según necesites */
 }
 
 .icon {
     display: block;
-    /* Mostramos el ícono de la hamburguesa */
     font-size: 1.5rem;
-    /* Ajusta el tamaño del ícono según necesites */
     cursor: pointer;
     color: #CCF5AC;
-    /* Color del ícono */
 }
 
 footer ul.active {
@@ -162,7 +156,6 @@ footer ul.active {
     align-items: center;
 }
 
-/* Estilo para los elementos de la lista */
 footer ul.active li {
     margin: 2px 0;
 }

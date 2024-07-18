@@ -1,0 +1,36 @@
+.contenedor-titulo {
+    display: flex;
+  
+}
+
+.espacio-izquierda{
+    flex: 25%;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+
+.espacio-derecha{
+    flex: 25%;
+    margin: 10px;
+    padding: 10px;
+
+}
+.title {
+    font-size: 2rem;
+    margin-top:  20px;
+    padding: 10px;
+    flex: 50%;
+    text-align: center;
+    border-bottom: 4px solid rgb(0, 0, 0); 
+    transition: border-color 0.3s ease; 
+
+}
+
+.title h1 {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+}
+

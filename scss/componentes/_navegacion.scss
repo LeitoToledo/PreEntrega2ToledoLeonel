@@ -13,8 +13,7 @@ nav ul {display: flex;
     text-align: center;
     width: 100vw;
     justify-content: space-around;
-
-
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -23,7 +22,7 @@ nav ul li {
     justify-content: space-around;
 }
 
-nav ul li a button {
+nav ul li a .btn-nav {
     color: #CCF5AC;
     padding: 10px;
     margin: 2px;
@@ -31,7 +30,8 @@ nav ul li a button {
     text-decoration: none;
 }
 
-button {
+.btn-nav {
+    font-weight:400;
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -39,16 +39,16 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.btn-nav:hover {
     background-color: #0f470d;
 }
 
 .menu-hamburguesa-nav {
-    display: none; /* Ocultamos el contenedor por defecto */
+    display: none; 
 }
 
 .icono-nav {
-    display: none; /* Ocultamos el ícono por defecto */
+    display: none; 
 }
 
 // Media q para mobile 
@@ -70,7 +70,7 @@ button:hover {
         width: 100vw
     }
 
-    nav ul li a button {;
+    nav ul li a .btn-nav {;
         font-size : 1rem;
         padding : 5px;
         margin : 0;
@@ -78,15 +78,15 @@ button:hover {
 
     
     .menu-hamburguesa-nav {
-        display: block; /* Mostramos el contenedor del menú hamburguesa */
-        margin-top: 10px; /* Ajusta según necesites */
+        display: block;
+        margin-top: 10px; 
     }
 
     .icono-nav {
-        display: block; /* Mostramos el ícono de la hamburguesa */
-        font-size: 1.5rem; /* Ajusta el tamaño del ícono según necesites */
+        display: block;
+        font-size: 1.5rem; 
         cursor: pointer;
-        color: #CCF5AC; /* Color del ícono */
+        color: #CCF5AC; 
     }
 
     .navegacion ul.active {display:flex;
@@ -94,7 +94,6 @@ button:hover {
         align-items: center;
     }
 
-    /* Estilo para los elementos de la lista */
     .navegacion ul.active li {
         margin: 2px 0;
         
