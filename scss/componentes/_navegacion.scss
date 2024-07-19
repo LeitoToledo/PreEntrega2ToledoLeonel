@@ -16,10 +16,9 @@ nav ul {display: flex;
     margin-top: 10px;
 }
 
+
 nav ul li {
-    display: inline-block;
-    list-style-type: none;
-    justify-content: space-around;
+    @include nav-ul-li()
 }
 
 nav ul li a .btn-nav {
