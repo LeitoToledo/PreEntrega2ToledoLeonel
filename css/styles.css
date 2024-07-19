@@ -638,13 +638,16 @@ h1 {
 }
 .div-body .seccion-conteiner-tips {
   position: relative;
-  background: url("/assets/images/Descargar Pack Bellos Fondos de paisajes HD (10).jpg") no-repeat center center;
+  background-image: url(/assets/images/imagenfondotip.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .div-body .seccion-conteiner-tips::before {
   content: "";
@@ -653,7 +656,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Cambia el color y la opacidad según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 .div-body .titulo-conteiner-tips {
@@ -680,7 +683,7 @@ h1 {
 @media (max-width: 480px) {
   .div-body .seccion-conteiner-tips {
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: start;
