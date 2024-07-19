@@ -34,3 +34,8 @@
     padding-bottom: 5px;
 }
 
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+}

@@ -2,9 +2,9 @@
 @import '../scss/componentes/header';
 @import '../scss/componentes/navegacion';
 @import '../scss/componentes/footer';
-@import '../scss/Seccion_Inicio/inicio';
-@import '../scss/_seccionProductos/main.scss';
-@import '../scss/seccionContacto/contactos';
-@import '../scss/_seccionServicios/layout';
+@import './_Sections/inicio';
+@import './_Sections/Productos';
+@import './_Sections/contactos';
+@import './_Sections/Servicios';
+@import './_Sections/tipsycuidados';
 @import '../node_modules/animate.css/animate.css';
-@import './_seccionTipsYcuidados/tipsycuidados';

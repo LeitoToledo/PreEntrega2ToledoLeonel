@@ -136,62 +136,62 @@ h1 {
 
 @media (max-width: 480px) {
 
-.texto-container {
-    width: 90vw;
-    padding: 5px;
-    font-size: 1rem;
-    text-align: start;
-    height: auto;
-}
+    .texto-container {
+        width: 90vw;
+        padding: 5px;
+        font-size: 1rem;
+        text-align: start;
+        height: auto;
+    }
 
 
-.contenedor-grid {
-    grid-template-areas:
-        "aside1"
-        "articulo1"
-        "articulo2"
-        "aside2";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 5px;
-}
+    .contenedor-grid {
+        grid-template-areas:
+            "aside1"
+            "articulo1"
+            "articulo2"
+            "aside2";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
 
 
-.div-container {
-    margin-top: 15px;
-    padding-left: 2vw;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
+    .div-container {
+        margin-top: 15px;
+        padding-left: 2vw;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
 
 
-.articulo1 {
-    display: flex;
-    justify-content: center;
-}
+    .articulo1 {
+        display: flex;
+        justify-content: center;
+    }
 
 
-.contenedor-producto1 {
-    height: 80%;
-    width: 80%;
-}
+    .contenedor-producto1 {
+        height: 80%;
+        width: 80%;
+    }
 
-.aside2 {
-    display: flex;
-    justify-content: center;
-}
+    .aside2 {
+        display: flex;
+        justify-content: center;
+    }
 
-.contenedor-producto2 {
-    height: 80%;
-    width: 80%;
-}
+    .contenedor-producto2 {
+        height: 80%;
+        width: 80%;
+    }
 
 
-#parrafo1,
-#parrafo2 {
-    font-size: 1rem;
-    text-align: center;
-}
+    #parrafo1,
+    #parrafo2 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
 }

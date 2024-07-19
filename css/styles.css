@@ -625,11 +625,16 @@ h1 {
   padding-bottom: 5px;
 }
 
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+}
 .div-body {
   background-color: beige;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  background-image: url(/assets/images/fondo-textura-papel-verde_1627-3021.avif);
 }
 .div-body .seccion-conteiner-tips {
   position: relative;
@@ -670,6 +675,7 @@ h1 {
 }
 .div-body .link-animated:hover {
   border-bottom: 5px solid rgb(0, 0, 0);
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .div-body .seccion-conteiner-tips {
@@ -704,12 +710,20 @@ h1 {
     height: 100%;
     text-align: start;
     justify-content: center;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.1;
   }
   .div-body #h2-tip {
-    line-height: 1.1;
+    line-height: 0;
     font-size: 18px;
+  }
+  .div-body #tip-h3 {
+    line-height: 1.1;
+    font-size: 1rem;
+  }
+  .div-body .p-3 {
+    line-height: 1.2;
+    font-size: 0.5rem;
   }
 }
 
