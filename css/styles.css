@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import '../node_modules/animate.css/animate.css';
 html {
   padding: 0;
@@ -283,11 +282,10 @@ footer ul li a .button-footer {
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   text-align: center;
   filter: blur(0.5px);
-  padding-left: 8vw;
 }
 
 .texto-container {
@@ -322,13 +320,14 @@ h1 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 400px 400px;
   gap: 10px;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 /* PRIMER IMAGEN */
 .articulo1 {
   margin-top: 2rem;
   grid-area: articulo1;
+  margin-top: 1rem;
 }
 
 .contenedor-producto1 {
@@ -404,9 +403,9 @@ h1 {
   object-fit: contain;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 600px) {
   .texto-container {
-    width: 90vw;
+    width: 100%;
     padding: 5px;
     font-size: 1rem;
     text-align: start;
@@ -420,7 +419,6 @@ h1 {
   }
   .div-container {
     margin-top: 15px;
-    padding-left: 2vw;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -438,8 +436,10 @@ h1 {
     justify-content: center;
   }
   .contenedor-producto2 {
+    margin-top: 15px;
     height: 80%;
     width: 80%;
+    margin-bottom: 0;
   }
   #parrafo1,
   #parrafo2 {
@@ -466,6 +466,42 @@ h1 {
   color: #0b5208;
 }
 
+.div-container-productos {
+  display: flex;
+  height: 20vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: blur(0.5px);
+}
+
+.texto-container-productos {
+  display: flex;
+  width: 70vw;
+  height: 70%;
+  color: #CCF5AC;
+  background-image: url(../assets/images/fondo\ tierra.jpg);
+  background-size: contain;
+  border: solid 3px #4CAF50;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  line-height: 1;
+  box-shadow: 2px 2px 20px 5px rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+}
+
 .plantas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -490,20 +526,30 @@ h1 {
 }
 
 .info:hover {
+  background-image: url(../assets/images/fondo\ tierra.jpg);
+  background-size: contain;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.1);
   transition: 0.1;
   border: none;
+  transition: all 0.3s ease;
 }
 
 .nombre-planta {
   width: 100%;
-  color: #111002;
+  color: #000000;
 }
 
 .precio-planta {
   width: 100%;
-  color: #111002;
+  color: rgb(0, 0, 0);
+}
+
+.nombre-planta:hover {
+  color: white;
+}
+
+.precio-planta:hover {
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -598,13 +644,13 @@ h1 {
 }
 
 .espacio-izquierda {
-  flex: 25%;
+  flex: 10%;
   margin: 10px;
   padding: 10px;
 }
 
 .espacio-derecha {
-  flex: 25%;
+  flex: 10%;
   margin: 10px;
   padding: 10px;
 }
@@ -637,13 +683,13 @@ h1 {
   background-image: url(/assets/images/fondo-textura-papel-verde_1627-3021.avif);
 }
 .div-body .seccion-conteiner-tips {
+  background-image: url(/assets/images/ack-bellos-fondos-de-paisajes-hd-10.avif);
   position: relative;
-  background-image: url(../assets/images/ack-bellos-fondos-de-paisajes-hd-10.avif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,10 +726,11 @@ h1 {
   border-bottom: 5px solid rgb(0, 0, 0);
   cursor: pointer;
 }
-@media (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 660px) {
   .div-body .seccion-conteiner-tips {
     height: auto;
     width: 100%;
+    height: 40vh;
     display: flex;
     justify-content: center;
     text-align: start;
@@ -696,7 +743,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Cambia el color y la opacidad según tus necesidades */
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
     opacity: initial;
   }
@@ -714,7 +761,7 @@ h1 {
     text-align: start;
     justify-content: center;
     font-size: 16px;
-    line-height: 1.1;
+    line-height: 1.6;
   }
   .div-body #h2-tip {
     line-height: 0;
@@ -732,24 +779,37 @@ h1 {
 
 .tip-conteiner {
   background: radial-gradient(ellipse at center, #155312 40%, rgba(19, 29, 19, 0.8274509804) 100%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tip-conteiner #tip1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.tip-conteiner .p-3 {
+  width: 60%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
 }
 .tip-conteiner #tip-h3 {
   font-weight: bolder;
   font-size: 24px;
   text-align: center;
   color: rgb(158, 156, 28);
-  line-height: 5.6;
+  line-height: 2.5;
   transition: border-bottom 0.3s ease-in-out;
 }
 .tip-conteiner #tip-h3:hover {
   border-bottom: solid 3px rgb(211, 208, 33);
-}
-.tip-conteiner .p-3 {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.8;
-  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */

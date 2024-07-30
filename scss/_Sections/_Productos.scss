@@ -17,6 +17,43 @@
     color: #0b5208;
 }
 
+
+.div-container-productos {
+    display: flex;
+    height: 20vh;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: blur(0.5px);
+}
+
+.texto-container-productos {
+    display: flex;
+    width: 70vw;
+    height: 70%;
+    color: #CCF5AC;
+    background-image: url(../assets/images/fondo\ tierra.jpg);
+    background-size: contain;
+    border: solid 3px #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 1;
+    box-shadow: 2px 2px 20px 5px rgba(0.0.0.0);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+}
+
 .plantas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,20 +78,30 @@
 }
 
 .info:hover {
+    background-image: url(../assets/images/fondo\ tierra.jpg);
+    background-size: contain;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.1);
     transition: 0.1;
     border: none;
+    transition: all 0.3s ease;
+
 }
 
 .nombre-planta {
     width: 100%;
-    color: #111002;
+    color: #000000;
 }
 
 .precio-planta {
     width: 100%;
-    color: #111002;
+    color: rgb(0, 0, 0)
+}
+
+.nombre-planta:hover{
+    color: white;
+}
+.precio-planta:hover{
+    color: white;
 }
 
 // Media q para mobile 

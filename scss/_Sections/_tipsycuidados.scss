@@ -5,12 +5,13 @@
     background-image: url(/assets/images/fondo-textura-papel-verde_1627-3021.avif);
 
     .seccion-conteiner-tips {
+        background-image: url(/assets/images/ack-bellos-fondos-de-paisajes-hd-10.avif);
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,11 +55,11 @@
         cursor: pointer;
     }
 
-    @media (max-width: 480px) {
-        
+@media (min-width: 300px) and (max-width: 660px){   
         .seccion-conteiner-tips{
             height: auto;
             width: 100%;
+            height: 40vh;
             display: flex;
             justify-content: center;
             text-align: start;
@@ -72,7 +73,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Cambia el color y la opacidad según tus necesidades */
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: 1;
             opacity: initial;
         }
@@ -92,7 +93,7 @@
             text-align: start;
             justify-content: center;
             font-size: 16px;
-            line-height: 1.1;
+            line-height: 1.6;
         }
 
         #h2-tip {
@@ -113,12 +114,33 @@
 
 .tip-conteiner{
     background: radial-gradient(ellipse at center, #155312 40%, #131d13d3 100%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    #tip1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    } 
+
+    .p-3 {
+        width: 60%;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.8;
+        color: rgb(0, 0, 0);    }
 
     #tip-h3{font-weight: bolder;
         font-size: 24px;
         text-align: center;
         color: rgb(158, 156, 28);
-        line-height: 5.6;
+        line-height: 2.5;
         transition: border-bottom 0.3s ease-in-out;
 
 
@@ -130,11 +152,6 @@
     
    
 
-    .p-3{
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-        line-height: 1.8;
-        color: rgb(0, 0, 0);
-    }
+    
 }
+
